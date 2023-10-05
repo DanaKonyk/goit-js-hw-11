@@ -6,6 +6,20 @@ body {
 
     }
 
+    img {
+        display: block;
+        width: 100%;
+        height: 250px;
+    }
+
+.search-form {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
 input,
 button {
     border: none;
@@ -15,14 +29,13 @@ button {
 
 input {
     border: 2px solid #DADDEC;
-    margin: 5px 0 10px;
+    // margin: 5px 0 10px;
     font-size: 1rem;
     color: #656880;
         }
     
 button {
   background-image: linear-gradient(to right, #89CAFF, #6589FF);
-  display: block;
   color: #fff;
   font-size: 1rem;
   cursor: pointer;
@@ -32,4 +45,49 @@ button {
 
 button:hover {
   box-shadow: none;
+  }
+
+  .gallery,
+  .comment-box {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+
+  .gallery {
+    margin-left: -20px;
+    padding-top: 30px;
+    justify-content: center;
+  }
+
+  .gallery-link {
+    margin-top: 20px;
+    margin-left: 20px;
+    min-width: 280px;
+    width: calc((100% - 80px) / 4);
+    text-decoration: none;
+  }
+
+  .comment-box {
+    color: #021524a2;
+    font-size: 10px;
+    gap: 6px;
+    background-image: linear-gradient(131.83deg, #FFFAFA 0%, #FFF7F7 99.21%);
+    text-align: center;
+    border-radius: 5px;
+}
+
+
+  #infiniteScroll {
+      font-size: 2.5em;
+      position: fixed;
+      bottom: 10px;
+      right: 10px;
+      cursor: pointer;
+      z-index: 2;
+  }
+
+  #infiniteScroll::before {
+      content: "🔝";
   }
